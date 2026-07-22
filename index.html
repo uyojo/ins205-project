@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>INS205 | Infrastructure Dashboard</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>INS205 Project</h1>
+      <span class="status-badge">Live Environment</span>
+    </nav>
+
+    <div class="container">
+      <!-- Status Cards -->
+      <div class="grid">
+        <div class="card">
+          <h3>Application Type</h3>
+          <div class="value">Static Web App</div>
+          <p>HTML5 & CSS3 Grid</p>
+        </div>
+        <div class="card">
+          <h3>Containerization</h3>
+          <div class="value">Docker</div>
+          <p>Base Image: nginx:alpine</p>
+        </div>
+        <div class="card">
+          <h3>Version Control</h3>
+          <div class="value">GitHub</div>
+          <p>Public Repository</p>
+        </div>
+      </div>
+
+      <!-- Architecture Diagram -->
+      <div class="architecture">
+        <h2>Deployment Pipeline</h2>
+        <p>
+          A visual representation of the deployment strategy for this
+          assignment. The application is packaged into a lightweight Nginx
+          container and pushed to a public registry.
+        </p>
+
+        <div class="arch-flex">
+          <div class="node">
+            <strong>1. Local Source</strong>
+            <p>Source Code & Dockerfile</p>
+          </div>
+          <div class="arrow">→</div>
+          <div class="node">
+            <strong>2. GitHub Repo</strong>
+            <p>Version Control & README</p>
+          </div>
+          <div class="arrow">→</div>
+          <div class="node">
+            <strong>3. DockerHub</strong>
+            <p>Public Image Registry</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
